@@ -2,29 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProGamers</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ProGamers</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-<script src="https://kit.fontawesome.com/57dc44e17d.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <script src="https://kit.fontawesome.com/57dc44e17d.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-    
 
 
-    
-      </script>
-    <script src="js/slicksettings.js"></script>
-    <script src="js/script.js"></script>
+	<div class="container">
+		<label for="nameInput">Imię:</label>
+		<input type="text" id="nameInput">
+
+		<label for="surnameInput">Nazwisko:</label>
+		<input type="text" id="surnameInput">
+
+
+
+		<hr>
+
+		<div class="box">
+			<div class="incomes">
+				<h2>Dodaj przychód</h2>
+				<label for="incomeDate">Data:</label>
+				<input type="date" id="incomeDate">
+
+				<label for="incomeAmount">Kwota:</label>
+				<input type="number" id="incomeAmount">
+				<button id="addIncomeButton">Dodaj przychód</button>
+			</div>
+
+			<div class="expenses">
+				<h2>Dodaj wydatek</h2>
+
+				<label for="expenseDate">Data:</label>
+				<input type="date" id="expenseDate">
+
+				<label for="expenseAmount">Kwota:</label>
+				<input type="number" id="expenseAmount">
+
+				<button id="addExpenseButton">Dodaj wydatek</button>
+			</div>
+		</div>
+		<button id="saveButton">Zapisz dane konta</button>
+
+
+		<hr>
+
+		<h2>Podsumowanie konta:</h2>
+
+		<button id="calculateButton">Oblicz</button>
+		<br>
+
+		<p id="totalIncomes">Całkowite przychody:</p>
+		<p id="totalExpenses">Całkowite wydatki:</p>
+		<p id="accountBalance">Stan konta:</p>
+	</div>
+
+
+	</script>
+	<script src="js/slicksettings.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
