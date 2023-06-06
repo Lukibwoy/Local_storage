@@ -79,7 +79,6 @@ class UserAccount {
 		}
 
 		window.localStorage.setItem('userAccount', JSON.stringify(accountData))
-		window.localStorage.getItem('userAccount')
 	}
 }
 
@@ -131,3 +130,37 @@ document.addEventListener('DOMContentLoaded', () => {
 		accountBalance.textContent = `Stan konta: ${balance} zł`
 	})
 })
+
+
+
+// Zad 2.Przedstaw na przykładzie różnicę między localStorage, sessionStorage a cookie. 
+
+
+// // localStorage
+// localStorage.setItem('name', 'Dave')
+// localStorage.setItem('surname', 'Kowalski')
+
+// const username = localStorage.getItem('username');
+// const age = localStorage.getItem('age');
+
+// localStorage.clear();
+
+// // sessionStorage
+
+// sessionStorage.setItem('region', 'France')
+// sessionStorage.setItem('background', 'black')
+
+// const region =  sessionStorage.getItem('region')
+// const background =  sessionStorage.getItem('background')
+
+// sessionStorage.removeItem('theme');
+
+
+// //cookie
+
+// document.cookie = 'username=Dave; region=Italy; age=28'
+// const cookies = document.cookie
+
+// document.cookie = 'username=; region=; age=;'
+
+// document.cookie = ''
